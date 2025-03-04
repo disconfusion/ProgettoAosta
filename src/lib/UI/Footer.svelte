@@ -1,6 +1,6 @@
 <script></script>
 
-<footer class="it-footer">
+<footer class="it-footer m-0">
     <div class="it-footer-small-prints clearfix">
       <div class="container d-flex justify-content-center">
         <!-- <h3 class="visually-hidden">Sezione Link Utili</h3> -->
