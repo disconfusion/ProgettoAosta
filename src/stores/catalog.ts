@@ -12,7 +12,7 @@ function createCatalog(){
             catalog.update((services) => {
                 services.push(service);
                 console.log(services);
-                return services;
+                return [...services];
             });
         }
     }

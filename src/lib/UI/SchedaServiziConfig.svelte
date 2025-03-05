@@ -9,7 +9,7 @@
     function addToCatalog(){
       counter++;
       validFields.id = counter;
-      catalog.addService(validFields);
+      catalog.addService({...validFields});
     }
 
 
@@ -61,7 +61,7 @@
 
     <div class="container shadow-lg mt-2 mb-2 p-5 border border-danger border-1 rounded d-flex flex-column justify-content-center">
       <ul>
-      {#each $catalog as service}
+      {#each $catalog as service }
         <li>
           Servizio: {service.id}
         </li>
