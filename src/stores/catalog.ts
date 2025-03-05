@@ -1,5 +1,5 @@
 import { writable } from 'svelte/store';
-import type { ValidFields } from '../types/validFields';
+import type { ValidFields } from '../types/ValidFields';
 
 
 
@@ -11,7 +11,6 @@ function createCatalog(){
         addService: (service:ValidFields) => {
             catalog.update((services) => {
                 services.push(service);
-                console.log(services);
                 return [...services];
             });
         }

@@ -1,6 +1,7 @@
 <script>
   import EditorForm from "$lib/UI/EditorForm.svelte";
-  
+    
+
 </script>
 
 <EditorForm fields={
@@ -74,7 +75,7 @@
   {
     "Header":"Note",
     "Avvisi":"text",
-    "Collegamenti esterni":"textarea"
+    "Scadenze":"textarea"
   }
 }/>
 

@@ -1,9 +1,18 @@
 
 <script lang="ts">
-  import { ValidFields } from "../../types/validFields";
   import catalog from "../../stores/catalog";
+  import type { ValidFields } from "../../types/ValidFields";
 
-    let validFields= new ValidFields();
+    let validFields:ValidFields = {
+      id: 0,
+      idService: false,
+      genInfo: false,
+      serviceDetail: false,
+      serviceAccess: false,
+      contactsSupport: false,
+      materials: false
+    }
+
     let counter = 0;
     
     function addToCatalog(){
@@ -11,6 +20,7 @@
       validFields.id = counter;
       catalog.addService({...validFields});
     }
+
 
 
 </script>
@@ -68,5 +78,7 @@
       {/each}
     </ul>
     </div>
+
+    <div class="container d-flex justify-content-center"><a href="redattore" class="btn btn-success" role="button" aria-disabled="true">Catalogo Servizi</a></div>
 </div>
     
